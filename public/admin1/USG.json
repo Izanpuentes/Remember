@@ -1,0 +1,1 @@
+{"type":"Topology","arcs":[[[9999,0],[-5032,2219],[1983,7780],[3049,-9999]]],"transform":{"scale":[0.000013786678667867476,0.000007433243324332607],"translate":[-75.232859,19.897226]},"objects":{"USG":{"type":"GeometryCollection","geometries":[{"arcs":[[0]],"type":"Polygon","properties":{"n":"Bahía de Guantánamo USNB","id":"USG+00?","x":-75.2,"y":19.93,"a":"USG"}}]}}}

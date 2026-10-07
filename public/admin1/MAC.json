@@ -1,0 +1,1 @@
+{"type":"Topology","arcs":[[[7480,9999],[2519,-6880],[-6171,-3119],[-3828,9681],[7480,318]]],"transform":{"scale":[0.0000032311231123112756,0.000005766376637663766],"translate":[113.534434,22.105373]},"objects":{"MAC":{"type":"GeometryCollection","geometries":[{"arcs":[[0]],"type":"Polygon","properties":{"n":"Macao","id":"MAC+00?","x":113.56,"y":22.13,"a":"MAC"}}]}}}

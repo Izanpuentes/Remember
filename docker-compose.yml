@@ -1,0 +1,41 @@
+services:
+  # Servidor de desarrollo: http://localhost:5173 (o http://<IP-del-PC>:5173 desde el móvil)
+  web:
+    image: node:22-slim
+    working_dir: /app
+    command: sh -c "npm install && npm run dev"
+    environment:
+      # Certificados raíz extra (p. ej. el del antivirus que inspecciona HTTPS). Ver docker/certs/README.md
+      NODE_EXTRA_CA_CERTS: /app/docker/certs/host-ca.crt
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+
+  # Genera el APK de Android: docker compose run --rm android
+  android:
+    profiles: ["android"]
+    build:
+      context: ./docker
+      dockerfile: android.Dockerfile
+    working_dir: /app
+    command: >
+      sh -c "npm install &&
+             npm run build &&
+             ([ -d android ] || npx cap add android) &&
+             npx cap sync android &&
+             cd android && sh ./gradlew assembleDebug &&
+             cp app/build/outputs/apk/debug/app-debug.apk /app/Remember-debug.apk &&
+             echo 'APK generado: Remember-debug.apk'"
+    environment:
+      NODE_EXTRA_CA_CERTS: /app/docker/certs/host-ca.crt
+    volumes:
+      - .:/app
+      - node_modules_android:/app/node_modules
+      - gradle_cache:/root/.gradle
+
+volumes:
+  node_modules:
+  node_modules_android:
+  gradle_cache:

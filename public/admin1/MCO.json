@@ -1,0 +1,1 @@
+{"type":"Topology","arcs":[[[9999,5060],[-9999,-5060],[5748,10000],[4251,-4940]]],"transform":{"scale":[0.000007171117111711125,0.000004077600000000103],"translate":[7.36575,43.72273]},"objects":{"MCO":{"type":"GeometryCollection","geometries":[{"arcs":[[0]],"type":"Polygon","properties":{"n":"Monaco-Ville","id":"MCO+00?","x":7.4,"y":43.75,"a":"MCO"}}]}}}

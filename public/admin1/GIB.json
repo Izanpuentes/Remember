@@ -1,0 +1,1 @@
+{"type":"Topology","arcs":[[[0,9994],[9999,5],[-146,-7911],[-5705,-2088],[-4148,9994]]],"transform":{"scale":[0.0000019615961596159413,0.000002183318331833066],"translate":[-5.3583870000000005,36.119289]},"objects":{"GIB":{"type":"GeometryCollection","geometries":[{"arcs":[[0]],"type":"Polygon","properties":{"n":"Gibraltar","id":"GIB+00?","x":-5.35,"y":36.13,"a":"GIB"}}]}}}

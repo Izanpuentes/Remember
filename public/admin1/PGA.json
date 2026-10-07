@@ -1,0 +1,1 @@
+{"type":"Topology","arcs":[[[9999,9999],[-7652,-9999],[-2347,9792],[9999,207]]],"transform":{"scale":[0.000001595259525952711,0.0000013754375437543215],"translate":[115.81462599999999,10.720852]},"objects":{"PGA":{"type":"GeometryCollection","geometries":[{"arcs":[[0]],"type":"Polygon","properties":{"n":"Islas Spratly","id":"PGA+00?","x":113.34,"y":8.27,"a":"PGA"}}]}}}

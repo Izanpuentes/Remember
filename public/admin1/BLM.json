@@ -1,0 +1,1 @@
+{"type":"Topology","arcs":[[[2821,0],[-2821,9999],[9999,-2221],[-7178,-7778]]],"transform":{"scale":[0.000006576157615761155,0.000004305430543054398],"translate":[-62.857411000000006,17.881985]},"objects":{"BLM":{"type":"GeometryCollection","geometries":[{"arcs":[[0]],"type":"Polygon","properties":{"n":"San Bartolomé","id":"BLM-5113","x":-62.83,"y":17.9,"a":"BLM"}}]}}}
