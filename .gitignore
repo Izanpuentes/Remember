@@ -4,3 +4,5 @@ android
 ios
 *.apk
 docker/certs/*.crt
+docker/keystore/
+remember-copia*.tar

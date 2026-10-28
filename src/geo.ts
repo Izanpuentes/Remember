@@ -26,7 +26,7 @@ export function contains(geometry: Geometry, lng: number, lat: number): boolean 
   return polygons.some((rings) => inPolygon(rings, lng, lat));
 }
 
-function polygonsOf(geometry: Geometry): Ring[][] {
+export function polygonsOf(geometry: Geometry): Ring[][] {
   return geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates;
 }
 

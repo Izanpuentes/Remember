@@ -6,6 +6,12 @@
       "runtimeExecutable": "docker",
       "runtimeArgs": ["compose", "up", "web"],
       "port": 5173
+    },
+    {
+      "name": "remember-web-local",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 5173
     }
   ]
 }

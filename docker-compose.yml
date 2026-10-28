@@ -34,6 +34,9 @@ services:
       - .:/app
       - node_modules_android:/app/node_modules
       - gradle_cache:/root/.gradle
+      # Clave con la que se firma el APK. Tiene que ser siempre la misma: si cambia, Android no deja
+      # instalar la versión nueva encima y hay que desinstalar (y desinstalar borra los viajes).
+      - ./docker/keystore:/root/.android
 
 volumes:
   node_modules:

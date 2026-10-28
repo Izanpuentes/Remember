@@ -32,6 +32,27 @@ en la raíz del proyecto: cópialo al móvil e instálalo.
 
 La carpeta `android/` se genera sola y no se sube al repositorio.
 
+### Actualizar la app sin perder los datos
+
+Android solo instala una versión nueva encima de la antigua (conservando viajes y fotos) si las dos
+están firmadas con la misma clave. La clave se guarda en `docker/keystore/` (no se sube al repositorio):
+**guarda una copia de esa carpeta**, porque si se pierde, la siguiente versión no se podrá instalar encima.
+
+Si la clave ha cambiado (por ejemplo, el APK se generó antes de que existiera `docker/keystore/`),
+el móvil dirá que la app no se puede instalar. Entonces, con el móvil conectado por USB y la depuración
+USB activada:
+
+```bash
+sh scripts/copia-movil.sh guardar
+```
+
+Comprueba que dice cuántas fotos ha copiado, desinstala Remember del móvil, instala el APK nuevo, ábrelo
+una vez y ciérralo, y después:
+
+```bash
+sh scripts/copia-movil.sh restaurar
+```
+
 ## Mapa
 
 - **Países**: contornos de `world-atlas` (escala 1:50 m), incluidos en la app.

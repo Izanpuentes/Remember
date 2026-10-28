@@ -53,8 +53,12 @@ button {
   margin-top: -22px;
   display: grid;
   place-items: end center;
-  pointer-events: auto;
+  /* Los toques pasan al globo, para que un dedo sobre un pin no estropee el zoom con dos dedos.
+     GlobeView detecta los toques en los pines. */
+  pointer-events: none;
   transition: opacity 0.2s;
+  /* El globo mueve los pines a cada fotograma: en su propia capa, moverlos no obliga a repintar */
+  will-change: transform;
 }
 
 .pin-head {
